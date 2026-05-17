@@ -1,26 +1,44 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-/*
-This is the Cpp lexer for the TORUS compiler (We chose to use the more complex compiler over
-an interpreter for speed).
-15 May 2025
-*/
+
 int main()
 {
+    using std::cin;
     using std::cout;
-    std::ifstream tests("tests.torus");
-    std::string line;
-    if (tests.is_open())
-    {
-        cout << "The file is properly connected\n";
-    }
-    else
-    {
-        cout << "The file is not connected\n";
-        return 1;
-    };
+    using std::string;
 
-    int lineNum = 0;
+#pragma region file opener
+
+    string file_directory = "/Users/graham/Desktop/TORUS/tests.torus"; // Sets File Directory
+    std::ifstream file(file_directory);                                // Opens File
+    if (file.is_open())                                                // checks if the file is open
+    {
+        cout << "File Succesfully Opened\n\n";
+    }
+    if (!file.is_open()) // if the file was not found, declares it and stops program
+    {
+        cout << "File Not Found\n";
+        return 1;
+    }
+
+    int line_num = 0;
+    string line;
+    while (std::getline(file, line))
+    {
+        line_num++;
+        cout << "Line " << line_num << ":\n"
+             << line << "\n\n";
+    }
+#pragma endregion
+
+#pragma region reader
+
+#pragma endregion
+
+#pragma region processer
+
+#pragma endregion
+
     return 0;
 }
