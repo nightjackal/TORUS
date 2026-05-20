@@ -1,0 +1,3 @@
+TORUS(test.torus){
+    dec:>var:>int:>[hello];
+};
