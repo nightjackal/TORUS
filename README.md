@@ -6,6 +6,15 @@ To begin, essentially, this is a solo project I am doing as a **highschooler** t
   Originally, this was supposed to be a project for me and my friend, but so far he has done nothing more than name it. Yes, the name TORUS was not my own invention, rather was the brain child a peer of mine. The idea of programming my own compiler and all infrastructure development and programming has been done by me. 
 ## The Prior Continued
   I openly apologize for the two other files for being unorganized, those were from when I was just beginning to learn git and github. I promise for future optimized organization. My plan is to create a strictly Java file, C++ file, and C file. Understand that I am not writting different parts of the compiler in different langauges, but rather rewritting it in different langauges heading towards lowest level programming for pure efficiency. Check out the **Ideation.png** files to see my ideation steps and how I got where I am. Please leave as many comments of advice as possible! (:
+  
+# Running This Compiler
+## Step 1
+In order to run any of my code simply open your IDE (Integrated Development Environment), save it as whatever file name you wish to your desktop, but ensure it ends with a .torus (and be super sure it doesn't end with a .torus.txt). 
+## Step 2
+Then continue into your terminal or powershell, direct it to your file (_PowerShell_ cd "C:\Users\YourUsername\Documents\My Project _Terminal_ cd /User/YourUserName/Desktop/my Project.torus")
+## Step 3
+), compile it with which ever C++ compiler you have (I suggest Clang or gcc), and have it create a executable file to your desktop.
+If you are using VSCode (I highly suggest, textedit gets pretty annoying real fast), download the Coderunner extension. Then go to settings(cmd + , or ctrl + ,) and search up code runner. Scroll down until you see the checkbox "Run In Terminal" select this if it is already not. Then open the Compiler File from your desktop in VSCode, and click the 270˚ counterclockwise rotated equilateral triangle. This should run your code.
 
 ## About the Language: TORUS
 TORUS is meant to be a highly efficient labguage designed for computing raw data--preferably numbers. I might one day use this to run a drone or RC plane I am building, that is if I can find a way to create a proper configuration for the MCU of selection. I will include that if any one is curious in a seperate repository I will link to this one, except the otehr will also have the MCU's KiCAD schematic and footprint files along with the STL cad files.
