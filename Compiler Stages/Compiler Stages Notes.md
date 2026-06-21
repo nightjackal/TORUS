@@ -1,4 +1,5 @@
-# Here are the extra notes for my compiler stages folder, this .txt file contains details about each stage and development in the creation of my compiler.
+# Here are the extra notes for my compiler stages folder
+This .md file contains details about each stage and development in the creation of my compiler.
 
 ## STAGE ONE: 20 June 2026
 1. FIle Opening Capabilities
