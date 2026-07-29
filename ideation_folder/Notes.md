@@ -1,10 +1,11 @@
 # My Notes Page
 ## 29 July 2026
-  So, the constraints for the problem I need to solve are:
+So, the constraints for the problem I need to solve are:
   1. Solution must process words in a way where the index does not go searching for unreal targets
   2. Cannot create new vectors (because the compiler already uses four and that is my limit)
+
 Define:
-1. I need to create something that will ensure that the alphaprocessor does not search for unreal targets before where the file begins 
+I need to create something that will ensure that the alphaprocessor does not search for unreal targets before where the file begins 
 Ideas:
 1. Create a void function that stops or allows to continue the alpha processor after it figures out wether it would lead to unwanted results.
 2. Create a special syntax rule where the first _certain number*_ of characters in a TORUS file are priorly defined
