@@ -1,6 +1,13 @@
 # Here are the extra notes for my compiler stages folder
 This .md file contains details about each stage and development in the creation of my compiler.
 
+## STAGE THREE: 29 July 2026
+1. Got rid of both the token library and alphaprocessor separate files and now combined them into the normal compiler file
+2. Optimizing vector storage of tokens (I have been experimenting with std::arrays instead of vectors because they are much more efficient and safe than vectors.
+3. Heavy work on alpha processor--still working on it though
+4. Symbol Processor completed
+5. I now realize though that when the index of the primary loop is in a point of the source code file in which the length behind the index is less than the length of the largest keyword, the alphaprocessor automatically searches for things less than index 0 which do not exist. I think I have an idea to solve this, check the ideations folder for my Engineering Design Process notes.
+
 ## STAGE TWO: 20 June 2026
 1. Optimized reading algorithm
 2. Began Tokenization process
